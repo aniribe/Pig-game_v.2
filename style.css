@@ -126,7 +126,7 @@ button {
 }
 
 button:hover {
-  font-weight: 600;
+  font-weight: 500;
   color: #f7f7f7;
 }
 button:hover i {
@@ -158,13 +158,48 @@ i {
   top: 467px;
 }
 
+#winningScore {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-45%);
+  top: 520px;
+  padding: 10px;
+  text-align: center;
+  font-family: Lato;
+  font-size: 20px;
+  text-transform: uppercase;
+  /* font-weight: 300; */
+  /* transition: background-color 0.3s, color 0.3s; */
+  background-color: #262b2f;
+  color: #eb4d4d;
+  border: 1px solid #555;
+}
+
+#winningScore:focus {
+  outline: none;
+}
+
+#winningScore::-webkit-outer-spin-button,
+#winningScore::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .dice {
   position: absolute;
   left: 50%;
-  top: 178px;
+
   transform: translateX(-50%);
   height: 100px;
   box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.1);
+}
+
+#dice1 {
+  top: 118px;
+}
+
+#dice2 {
+  top: 260px;
 }
 
 .winner {
