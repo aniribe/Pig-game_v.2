@@ -46,11 +46,13 @@ function changeDicePicture(diceValue1, diceValue2) {
 
 function showHideDice(visible) {
   if (visible) {
-    document.querySelector("#dice1").style.display = "block";
-    document.querySelector("#dice2").style.display = "block";
+    document
+      .querySelectorAll(".dice")
+      .forEach(element => (element.style.display = "block"));
   } else {
-    document.querySelector("#dice1").style.display = "none";
-    document.querySelector("#dice2").style.display = "none";
+    document
+      .querySelectorAll(".dice")
+      .forEach(element => (element.style.display = "none"));
   }
 }
 
